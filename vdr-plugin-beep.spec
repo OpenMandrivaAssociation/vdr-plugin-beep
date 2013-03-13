@@ -1,18 +1,13 @@
-
 %define plugin	beep
-%define name	vdr-plugin-%plugin
-%define version	0.1.2
-%define rel	2
 
 Summary:	VDR plugin: Notify with a beep
-Name:		%name
-Version:	%version
-Release:	%mkrel %rel
+Name:		vdr-plugin-%plugin
+Version:	0.1.2
+Release:	3
 Group:		Video
 License:	GPL
 URL:		http://www.deltab.de/content/view/25/62
 Source:		vdr-%plugin-%version.tgz
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
@@ -30,17 +25,7 @@ chmod a+x contrib/Elise.sh
 %vdr_plugin_build
 
 %install
-rm -rf %{buildroot}
 %vdr_plugin_install
-
-%clean
-rm -rf %{buildroot}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
