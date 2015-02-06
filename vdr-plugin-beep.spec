@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Notify with a beep
 Name:		vdr-plugin-%plugin
 Version:	0.1.2
-Release:	3
+Release:	4
 Group:		Video
 License:	GPL
 URL:		http://www.deltab.de/content/view/25/62
