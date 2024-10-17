@@ -6,7 +6,7 @@ Version:	0.1.2
 Release:	5
 Group:		Video
 License:	GPL
-URL:		http://www.deltab.de/content/view/25/62
+URL:		https://www.deltab.de/content/view/25/62
 Source:		vdr-%plugin-%version.tgz
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
